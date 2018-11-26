@@ -1,15 +1,22 @@
 package com.company;
+import java.util.*;
 
 public class Main {
 
     public static void main(String[] args) {
+        Scanner kbreader = new Scanner(System.in);
+
         int x = 0;
         int count = 0;
         int rand;
         int y;
         int counter = 0;
-        int runTime = 1000000;
+        int runTime;
         int totalCount = 0;
+
+        System.out.println("How many trials do you want to run? \n Enter any integer, and I'll tell you the average number" +
+                "of times to get the correct answer.");
+        runTime = kbreader.nextInt();
 
         while (counter != runTime) {
             int check [] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,
