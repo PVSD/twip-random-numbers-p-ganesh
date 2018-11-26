@@ -8,7 +8,7 @@ public class Main {
         int rand;
         int y;
         int counter = 0;
-        int runTime = 100;
+        int runTime = 1000000;
         int totalCount = 0;
 
         while (counter != runTime) {
@@ -29,10 +29,19 @@ public class Main {
                 }
 
             }
-            totalCount = count;
+            totalCount += count;
             counter ++;
         }
         int average = totalCount/runTime;
-        System.out.println("i set my method to run " + runTime + " times and its average was " + average + " times to hit all numbers.");
+        System.out.println("i set my method to run " + runTime + " times and its average was " + average +
+                " times to hit all numbers.");
     }
 }
+
+/*Basically the while loop is what runs the method to check for all of the numbers from 1 to 100. The two lines of
+code after the second while loop increment the total count and calculate the average. The int at the top named runTime
+is what dictates how many times the method has to run before it is allowed to stop.
+
+Like any experiment, the results and assumptions have a greater statistical significance if ther eare multiple trials
+done. The more trials, the lower standard deviation, and the higher statistical significance.
+ */
